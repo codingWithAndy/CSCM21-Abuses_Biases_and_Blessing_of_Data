@@ -80,8 +80,7 @@
 \def\plainauthor{First Author, Second Author, Third Author,
   Fourth Author, Fifth Author, Sixth Author}
 \def\emptyauthor{}
-\def\plainkeywords{Authors' choice; of terms; separated; by
-  semicolons; include commas, within terms only; this section is required.}
+\def\plainkeywords{}
 \def\plaingeneralterms{Documentation, Standardization}
 
 % llt: Define a global style for URLs, rather that the default one
@@ -143,74 +142,43 @@
 
 \maketitle
 
-\begin{abstract}
+%\begin{abstract}
  
-\end{abstract}
+%\end{abstract}
 
 
 % ACM Classfication
 
-\begin{CCSXML}
-<ccs2012>
-<concept>
-<concept_id>10003120.10003121</concept_id>
-<concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003120.10003121.10003125.10011752</concept_id>
-<concept_desc>Human-centered computing~Haptic devices</concept_desc>
-<concept_significance>300</concept_significance>
-</concept>
-<concept>
-<concept_id>10003120.10003121.10003122.10003334</concept_id>
-<concept_desc>Human-centered computing~User studies</concept_desc>
-<concept_significance>100</concept_significance>
-</concept>
-</ccs2012>
-\end{CCSXML}
-
-\ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
-\ccsdesc[300]{Human-centered computing~Haptic devices}
-\ccsdesc[100]{Human-centered computing~User studies}
 
 % Author Keywords
-\keywords{\plainkeywords}
 
 % Print the classficiation codes
-\printccsdesc
-Please use the 2012 Classifiers and see this link to embed them in the text: \url{https://dl.acm.org/ccs/ccs_flat.cfm}
+\section{Hypothesis or Conjecture}
+To remove the potential gender bias in suggested pay to an employee from data with a clear gender bias within the dataset. Using bias-aware algorithms to figure out how much data exists in the data to measure the bias then correctly and then remove the outcome's bais' effects.
 
-
-
-\section{Introduction}
-
-\subsection{Hypothesis or Conjecture}
-To remove the potential gender bias in suggested pay to an employee from data that has a clear gender bias within the dataset. Using bias-aware algorithms to figure out how much data exists in the data to measure the bias then correctly and then remove the outcome's bais' effects.
-
-\section{Main}
-
-\subsection{Focus of the Study}
+\section{Focus of the Study}
 The study aims to remove bias within algorithms. This aim is within a context that there is an awareness of bias within the data. It is well documented and known that women are paid less than men for doing the same role. This situation is known as the gender pay gap. When companies are looking at how much to offer new workers or performance reviews to current employees, when current employees' data get used to forming how much a person should get paid, a man and women will receive different amounts. An ML model will likely figure this out. Therefore we aim to remove the bias and prejudice in the data to build a model representing the employees more fairly.
 
 Additional libraries like Shapley Additive Exploration or possibly LIME will get used to gain some insights into the explainability of the models.
  
 
-\subsection{Research Landscape and Social Significance Evidence}
-ML requires many past data to inform future events, with AI and machine learning being the key driver behind many decisions. However, with there being a well-known gap between a person's gender and their pay, the ML models will only learn this and use this as a factor in their decisions making. Therefore, to stop this from happening, a system needs to be put into place to remove this process's bias. %add more facts here
+\section{Research Landscape and Social Significance Evidence}
+In 2018, women, no matter their background, on average earned just 82 cents for every \$1 earned by men \cite{paygapfacts}. ML requires many past data to inform future events, with AI and machine learning being the key driver behind many decisions. However, with there being a well-known gap between a person's gender and their pay, the ML models will only learn this and use this as a factor in their decisions making. Therefore, to stop this from happening, a system needs to be put into place to remove this process's bias. 
+
+Through using fairness techniques at preprocessing stages \cite{} of supervised learning, we will aim to remove the bias of someone's gender from a suggested pay salary for an individual. %add more facts here
 
 
-\subsection{Outline the Experimental Method(s)}
+\section{Outline the Experimental Method(s)}
 The experiment will aim to plot the initial dataset to see where the decisions are for the different genders in questions. We will then aim to remove this gender bias by first identifying the bias and then removing it. 
 
 We will also aim to use additional libraries to gain insights and explainability from the outputs to see how much of an impact the methods have had on removing gender bias.
 
-\subsection{Data to be Used}
-We will be using simulated data containing gender, years of experience and type of career initially. The overall aim is to predict the salary of someone while taking these features into account. We will also predict the salary of an employee while also removing any gender bias within the results. The type of career will be focusing on software engineering (SWE) and consulting.
+\section{Data to be Used}
+We will be using self-created simulated data containing gender, years of experience, and career type. The overall aim is to predict the salary of someone while taking these features into account. We will also predict the salary of an employee while also removing any gender bias within the results. The type of career will be focusing on software engineering (SWE) and consulting.
 
-As the initial dataset will be synthetic based on general assumptions about pay, which are well known, there will be a clear positive relationship between years of experience and a person's salary. An SWE will earn less than a consultant, and being male will earn them more money than females. Additional considerations within the data are that in SWE roles, women will start at the lower end of the scale while men will be varied and, therefore, women will be over time increasing their pay. However, this increase will be at a faster rate than men but from a lower starting point. While for consulting, both males and females will start at the same rate, but men will get more considerable increases in pay over time compared to their women counterparts.
+As the initial dataset will be synthetic, based on general assumptions about pay, which are well known, there will be a clear positive relationship between years of experience and a person's salary. An SWE will earn less than a consultant, and being male will earn them more money than females. Additional considerations within the data are that in SWE roles, women will start at the lower end of the scale while men will be varied and, therefore, women will be over time increasing their pay. However, this increase will be at a faster rate than men but from a lower starting point. While for consulting, both males and females will start at the same rate, but men will get more considerable increases in pay over time compared to their women counterparts.
 
-\subsection{Concepts to be Discussed}
+\section{Concepts to be Discussed}
 
 The study's concepts will be to look at removing gender bias from a predictive model and using tools to look at the explainability of the model and what gets used to create the predictions.
 
@@ -228,7 +196,7 @@ The study's concepts will be to look at removing gender bias from a predictive m
 %both in being accepted into the conference, and in influencing the
 %work of our field.
 
-\section{Acknowledgments}
+%\section{Acknowledgments}
 
 %Sample text: We thank all the volunteers, and all publications support
 %and staff, who wrote and provided helpful comments on previous
@@ -260,7 +228,7 @@ The study's concepts will be to look at removing gender bias from a predictive m
 
 % BALANCE COLUMNS
 \balance{}
-
+\newpage
 % REFERENCES FORMAT
 % References must be the same font size as other body text.
 \bibliographystyle{SIGCHI-Reference-Format}
