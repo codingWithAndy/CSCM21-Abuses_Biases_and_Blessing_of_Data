@@ -1,0 +1,195 @@
+\documentclass{sigchi}
+
+% Use this section to set the ACM copyright statement (e.g. for
+% preprints).  Consult the conference website for the camera-ready
+% copyright statement.
+
+% Copyright
+
+%\setcopyright{acmcopyright}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+% DOI
+\doi{https://doi.org/10.1145/3313831.XXXXXXX}
+% ISBN
+\isbn{978-1-4503-6708-0/20/04}
+%Conference
+\conferenceinfo{CHI'20,}{April  25--30, 2020, Honolulu, HI, USA}
+%Price
+\acmPrice{\$15.00}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+%% HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP --
+%% Please note you need to make sure the copy for your specific
+%% license is used here!
+% \toappear{
+% Permission to make digital or hard copies of all or part of this work
+% for personal or classroom use is granted without fee provided that
+% copies are not made or distributed for profit or commercial advantage
+% and that copies bear this notice and the full citation on the first
+% page. Copyrights for components of this work owned by others than ACM
+% must be honored. Abstracting with credit is permitted. To copy
+% otherwise, or republish, to post on servers or to redistribute to
+% lists, requires prior specific permission and/or a fee. Request
+% permissions from \href{mailto:Permissions@acm.org}{Permissions@acm.org}. \\
+% \emph{CHI '16},  May 07--12, 2016, San Jose, CA, USA \\
+% ACM xxx-x-xxxx-xxxx-x/xx/xx\ldots \$15.00 \\
+% DOI: \url{http://dx.doi.org/xx.xxxx/xxxxxxx.xxxxxxx}
+% }
+\toappear{}
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+% Load basic packages
+\usepackage{balance}       % to better equalize the last page
+\usepackage{graphics}      % for EPS, load graphicx instead 
+\usepackage[T1]{fontenc}   % for umlauts and other diaeresis
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{textcomp}
+
+% Some optional stuff you might like/need.
+\usepackage{microtype}        % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}    % Fixes bug in hyperref caption linking
+\usepackage{ccicons}          % Cite your images correctly!
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+% If you want to use todo notes, marginpars etc. during creation of
+% your draft document, you have to enable the "chi_draft" option for
+% the document class. To do this, change the very first line to:
+% "\documentclass[chi_draft]{sigchi}". You can then place todo notes
+% by using the "\todo{...}"  command. Make sure to disable the draft
+% option again before submitting your final document.
+\usepackage{todonotes}
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+\def\plaintitle{Preventing Bias in Machine Learning by using Bias Aware Algorithms: An Empirical Experimental Study}
+\def\plainauthor{First Author, Second Author, Third Author,
+  Fourth Author, Fifth Author, Sixth Author}
+\def\emptyauthor{}
+\def\plainkeywords{Authors' choice; of terms; separated; by
+  semicolons; include commas, within terms only; this section is required.}
+\def\plaingeneralterms{Documentation, Standardization}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{12in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  pdfdisplaydoctitle=true, % For Accessibility
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{3}
+\author{%
+  \alignauthor{Andy Gray\\
+    \affaddr{445348}\\
+    \email{445348@swansea.ac.uk}}
+}
+
+\maketitle
+
+\section{Hypothesis or Conjecture}
+To remove the potential gender bias in a suggested pay to an employee from data with a clear gender bias within the dataset.
+
+\section{Focus of the Study}
+The study aims to remove bias within algorithms. This aim is within a context that there is an awareness of bias within the data. It is well documented and known that women are paid less than men for doing the same role. This situation is known as the gender pay gap. When companies are looking at how much to offer new workers or performance reviews to current employees, when current employees' data get used to forming how much a person should get paid, a man and women will receive different amounts. An ML model will likely figure this out. Therefore we aim to remove the bias and prejudice in the data to build a model representing the employees more fairly.
+
+Using bias-aware algorithms to figure out how much bias exists in the data and then measure it to remove its effects. This de-bias will get achieved by finding how much bias exists in the dataset. Once this gets identified, the model is used to measure it correctly and then subtract that bias's effect on the outcome.
+
+Additional libraries like Shapley Additive Exploration and LIME will get used to gain insights into the models' explainability. These explainability tools will allow us to see what impacts the model's predictions and check that gender bias is removed from the model's predictions. 
+
+
+\section{Research Landscape and Social Significance}
+In 2018, women, no matter their background, on average earned just 82 cents for every \$1 earned by men \cite{paygapfacts}. ML requires many past data to inform future events, with AI and machine learning being the key driver behind many decisions. However, with there being a well-known gap between a person's gender and their pay, the ML models will only learn this and use this as a factor in their decisions making. Therefore, to stop this from happening, a system needs to be put into place to remove this process's bias. 
+
+Through using fairness techniques at preprocessing stages \cite{ntoutsi2020bias} of supervised learning, we will aim to remove the bias of someones gender from a suggested pay salary for an individual. %add more facts here
+
+
+
+\section{Outline the Experimental Method(s)}
+The empirical experimental study will aim to plot the initial dataset to see where the decisions are for the different genders in questions. Through visualising techniques and predicting the potential outputs for each gender and their years of service, we will have a benchmark as to what the data, when un-biased, would have produced for the employee.
+
+We will then aim to remove this gender bias by first identifying the bias and then removing it. While again visualising the de-biased data and then using the exact predictions as previously used to see what the new results would be and demonstrate a de-bias in the model's output. We will use additional libraries to gain insights and explainability from the outputs to see how much impact the methods have had on removing gender bias.
+
+\section{Data to be Used}
+We will be using self-created simulated data containing gender, years of experience, and career type. The overall aim is to predict the salary of someone while taking these features into account. We will also predict the salary of an employee while also removing any gender bias within the results. The type of career will be focusing on software engineering (SWE) and consulting.
+
+As the initial dataset will be synthetic, based on general assumptions about pay, which are well known, there will be a clear positive relationship between years of experience and a person's salary. A SWE will earn less than a consultant, and being male will earn them more money than females. Additional considerations within the data are that in SWE roles, women will start at the lower end of the scale while men will be varied and, therefore, women will be over time increasing their pay. However, this increase will be at a faster rate than men but from a lower starting point. While for consulting, both males and females will start at the same rate, but men will get more considerable increases in pay over time compared to their women counterparts.
+
+\section{Concepts to be Discussed}
+
+The study's concepts will be to remove gender bias from a predictive model and use tools to look at the model's explainability and what gets used to create the predictions. This removal of bias will get done by using preprocessing de-biasing methods.  As human society had a long history of suffering from cognitive biases leading to social prejudices and mass injustice \cite{sen2020towards}, we will aim to remove the bias that the models will gain from our cognitive biases.
+
+This study will aim to make pay reviews fairer for each gender and standardise.  As the outputted model will aim to allow frequently review salaries for parity between genders and races. When recruiting, set the pay range offered on years' experience with some leeway for notable achievements, not how well the candidate negotiated their last pay package \cite{sage_work_diversity}.
+
+
+\newpage
+% BALANCE COLUMNS
+\balance{}
+
+% REFERENCES FORMAT
+% References must be the same font size as other body text.
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{sample}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

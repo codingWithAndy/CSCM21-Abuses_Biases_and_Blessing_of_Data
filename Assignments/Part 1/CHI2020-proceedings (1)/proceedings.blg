@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: proceedings.aux
+The style file: SIGCHI-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: sample.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--can't use both volume and number fields in sen2020towards
+Warning--empty publisher in sen2020towards
+Warning--empty address in sen2020towards
+You've used 4 entries,
+            5283 wiz_defined-function locations,
+            1240 strings with 15041 characters,
+and the built_in function-call counts, 3522 in all, are:
+= -- 411
+> -- 152
+< -- 1
++ -- 48
+- -- 57
+* -- 237
+:= -- 412
+add.period$ -- 22
+call.type$ -- 4
+change.case$ -- 30
+chr.to.int$ -- 4
+cite$ -- 7
+duplicate$ -- 285
+empty$ -- 202
+format.name$ -- 63
+if$ -- 817
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 65
+num.names$ -- 24
+pop$ -- 119
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 83
+stack$ -- 0
+substring$ -- 237
+swap$ -- 31
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 3
+while$ -- 25
+width$ -- 0
+write$ -- 89
+(There were 3 warnings)
