@@ -1,0 +1,82 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem{xgboost}
+{Tianqi Chen} {and} {Carlos Guestrin}. 2016.
+\newblock \showarticletitle{{XGBoost}: A Scalable Tree Boosting System}. In
+  {\em Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge
+  Discovery and Data Mining} {\em (KDD '16)}. ACM, New York, NY, USA, 785--794.
+\newblock
+\showISBNx{978-1-4503-4232-2}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/2939672.2939785}}
+
+
+\bibitem{pandas}
+{Wes McKinney} {and} {others}. 2010.
+\newblock \showarticletitle{Data structures for statistical computing in
+  python}. In {\em Proceedings of the 9th Python in Science Conference}, Vol.
+  445. Austin, TX, 51--56.
+\newblock
+
+
+\bibitem{google_ref}
+{Ben Packer}, {Yoni Halpern}, {Mario Guajardo-Céspedes}, {and} {Margaret
+  Mitchell}. 2018.
+\newblock Text Embedding Models Contain Bias. Here's Why That Matters.
+\newblock   (1 May 2018).
+\newblock
+\newblock
+\shownote{Google AI, Retrieved April 27, 2021 from
+  \url{https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html}.}
+
+
+\bibitem{python}
+{Guido Van~Rossum} {and} {Fred~L. Drake}. 2009.
+\newblock {\em Python 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA.
+\newblock
+\showISBNx{1441412697}
+
+
+\bibitem{seaborn}
+{Michael~L. Waskom}. 2021.
+\newblock \showarticletitle{seaborn: statistical data visualization}.
+\newblock {\em Journal of Open Source Software\/} {6}, 60 (2021), 3021.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.21105/joss.03021}}
+
+
+\end{thebibliography}
