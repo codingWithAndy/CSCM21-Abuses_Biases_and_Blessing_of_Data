@@ -151,17 +151,23 @@ We aim to remove the potential gender bias in a suggested pay to an employee fro
 [Motivation]\\
 \textbf{In 2018, women, no matter their background, on average earned just 82 cents for every \$1 earned by men \cite{1}. ML requires vast amounts of past data to inform future events, with AI and machine learning being the key driver behind many decisions. However, with there being a well-known gap between a person's gender and their pay, the ML models will only learn this and use this as a factor in their decisions making. Therefore, to stop this from happening, a system needs to be put into place to remove this process's bias.} 
 
-\textbf{Using fairness techniques at preprocessing stages \cite{3} of supervised learning, we will aim to remove the bias of someone's gender from a suggested pay salary for an individual. }
+\textbf{Using fairness techniques at preprocessing stages \cite{3} of supervised learning, we will aim to remove the bias of someone's gender from a suggested pay salary for an individual. } %Needs changing -> copy job from part 1.
 
-[Summary of existing lit]
+[Summary of existing lit]\\
 
-[Problems with lit]
+%blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
 
-[Project Spec]
+[Problems with lit]\\
+%blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
 
-[Result findings]
+[Project Spec]\\ % Maybe not needed.
+%blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
 
-[Overview]
+[Result findings]\\
+%blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+[Overview]\\
+	We will next look into the background of this topic and review existing literature. We will then explain the study design, the libraries used to create to solution and the dataset used, and the pre and post data processing techniques used. We will then present the results and analyse them. Finally, we will be discussing the over empirical study and concluding the overall findings.
 
 \section{Background \& Literature Review}
 
@@ -180,33 +186,59 @@ We aim to remove the potential gender bias in a suggested pay to an employee fro
 \subsection{Libraries}
 	We used Python 3 \cite{python} to create the empirical experiment. Additional libraries used were Pandas \cite{pandas} to allow us to load in the data and wrangle the data frames. Seaborn \cite{seaborn} was also used to visualise the data. XGBoost \cite{xgboost} to create the model and extract the critical interactions from within the model. 
 
-\subsection{Dataset and Data Preprocessing}
-	Synthetic dataset based around two job types -> why because was hard to find data set that does not provide "just an overview". 
+\subsection{Dataset and Data Pre \& Post-processing}
+	We create our dataset to simulate data containing gender, years of experience, and career type. Our overall aim is to predict the salary of someone while taking these features into account. The type of career will be focusing on software engineering (SWE) and consulting.  We decided to create this dataset synthetically due to time restrictions and lack of data collection containing real-world figures of these two career options. Most datasets found provided more of an overview than the exact figures, and we believe this is due to the sensitive and personal nature of the required data.
+	
+	We based the synthesised data on general assumptions about pay. There will be a clear positive relationship between years of experience and a person's salary. An SWE will earn less than a consultant, and being male will earn them more money than females generally. Additional factors within the data are that in SWE roles, women will start at the lower end of the scale while men will be varied and, therefore, women will be over time increasing their pay. However, this increase will be at a faster rate than men but from a lower starting point. While for consulting, both males and females will start at the same rate, but men will get more considerable increases in pay over time compared to their women counterparts. 
+	
+	%[data preprocessing]\\
+	As some of the columns contained text categorical data types, we first processed the data to convert this to a numerical value. The data got split into a train test set of 70/30\%. 
+	
+	%[data postprocessing]\\
+	We ensured that when the model was making its predictions, the predictions' interactions got provided with the results. We then created a bias variable based on the model's gender values and a bias index based on the values being in the datasets feature names and the bias-variance. 
+	
+	We were then able to create a de-biased $\hat{y}$ value by summing the interaction values and then minus 1. The outputted value then has created the new values with the gender bias removed.
 
-pandas.get\_dummies
 
+	%Synthetic dataset based around two job types -> why because was hard to find data set that does not provide "just an overview". 
+
+	%pandas.get\_dummies
+
+\subsection{Parameter Settings}
+	We set the learning rate to the model as 0.1, between the range of 0 and 1 that the model expects. The learning task for the model got set to regression squared error, which looks at the regression squared loss. The number of boost rounds got set to 100 as well.
 
 \section{Results \& Analysis}
+	
+	When we look at the dataset in its original representation (see fig: \ref{fig:original_data}), we can see a clear divide between the male and female pay salaries. We can see that the regression line for SWE is \textasciitilde{42,000} for women and \textasciitilde{60,000} for men starting, and then both these gender values increase to \textasciitilde{105,000}. Therefore both values roughly reaching the same value at 20 years of experience. While for consulting, the starting off values are very close to each other, \textasciitilde{60-65,000}. However, these values completely deviate when at the top end of the scale. Men have a value of \textasciitilde{115,000}, while women have a value of \textasciitilde{105,000}.
 
+	\begin{figure}[h]
+		\includegraphics[width=9.2cm]{original_data.png}
+		\caption{The dataset's datapoints and initial regression fit with the data being unmodified, split by gender and career option.}
+		\label{fig:original_data}
+		\centering
+	\end{figure}
 
+	Before removing the gender bias, we can see that the model's predictions mirror a similar result to the original data's general trend for SWE (see fig: \ref{fig:se_comparison}).  However, when we look at the values when the gender bias gets removed, the model's predictions almost align perfectly with each other. It is evident that there is some difference between the two gender predictions, but the difference is extremely marginal when concerning SWE employees. With both men and women being \textasciitilde{65,000} starting and \textasciitilde{112,000} at 20 years of experience.
+	
+	\begin{figure}[h]
+		\includegraphics[width=9.2cm]{se_comparison.png}
+		\caption{The model's 'Software Engineering' initial $\hat{y}$ regression prediction with bias and the $\hat{y}$ predition after the bias has been removed.}
+		\label{fig:se_comparison}
+		\centering
+	\end{figure}
 
-Unmodified dataset:
-\begin{figure}[h]
-	\includegraphics[width=8cm]{original_data.png}
-	\centering
-\end{figure}
+	In relations to consulting, we can see that the predictions with the bias still intact, the model's predictions follow the same patterns as the data overall (see fig: \ref{fig:consulting_comparison}).  The regression representation is close to being equally matched. With the starting off wage for both men and women around \textasciitilde{60-65,000} and the top end of the range being \textasciitilde{109-111,000}. It is evident that there is some difference between the two gender predictions, but the difference is very marginal concerning consulting employees. 
 
-\begin{figure}[h]
-	\includegraphics[width=8cm]{consulting_comparison.png}
-	\centering
-\end{figure}
+	\begin{figure}[h]
+		\includegraphics[width=9.2cm]{consulting_comparison.png}
+		\caption{The model's 'Consulting' initial $\hat{y}$ regression prediction with bias and the $\hat{y}$ predition after the bias has been removed.}
+		\label{fig:consulting_comparison}
+		\centering
+	\end{figure}
 
-\begin{figure}[h]
-	\includegraphics[width=8cm]{se_comparison.png}
-	\centering
-\end{figure}
+	Therefore, overall we can see that the approach has created almost perfect un-bias results between genders over the different career options. While it has not matched the values up entirely between the genders, it has created a much more even representation than prior. 
 
-
+	% Maybe add in RMSPE and other metrics in as well possibly?
 
 \section{Discussion \& Conclusion}
 	[discussion]
