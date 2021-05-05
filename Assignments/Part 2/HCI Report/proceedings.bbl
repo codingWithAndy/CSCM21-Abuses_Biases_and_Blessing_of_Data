@@ -32,6 +32,16 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem{uk_gender_gap}
+{Sam Bradley}. 2021.
+\newblock Here’s how UK agencies are improving their gender pay gaps.
+\newblock   (5 May 2021).
+\newblock
+\newblock
+\shownote{The Drum, Retrieved May 5, 2021 from:
+  \url{https://www.thedrum.com/news/2021/05/05/here-s-how-uk-agencies-are-improving-their-gender-pay-gaps}.}
+
+
 \bibitem{xgboost}
 {Tianqi Chen} {and} {Carlos Guestrin}. 2016.
 \newblock \showarticletitle{{XGBoost}: A Scalable Tree Boosting System}. In
@@ -41,6 +51,16 @@
 \showISBNx{978-1-4503-4232-2}
 \showDOI{%
 \url{http://dx.doi.org/10.1145/2939672.2939785}}
+
+
+\bibitem{bbc_gender_pay_gap}
+{Lora Jones}. 2018.
+\newblock What is the gender pay gap?
+\newblock   (5 February 2018).
+\newblock
+\newblock
+\shownote{BBC News, Retrieved May 5, 2021 from:
+  \url{https://www.bbc.co.uk/news/business-42918951}.}
 
 
 \bibitem{pandas}
@@ -60,6 +80,17 @@
 \newblock
 \shownote{Google AI, Retrieved April 27, 2021 from
   \url{https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html}.}
+
+
+\bibitem{ons_gender_pay_gap_17}
+{Roger Smith}. 2017.
+\newblock Annual Survey of Hours and Earnings: 2017 provisional and 2016
+  revised results.
+\newblock   (26 October 2017).
+\newblock
+\newblock
+\shownote{BBC News, Retrieved May 5, 2021 from:
+  \url{https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/gender-pay-differences}.}
 
 
 \bibitem{python}
