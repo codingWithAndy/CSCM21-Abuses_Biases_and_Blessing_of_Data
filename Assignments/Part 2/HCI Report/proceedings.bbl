@@ -32,6 +32,35 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem{equal_pay_act_1070}
+{UK~Public~General Acts}. 1970.
+\newblock Equal Pay Act 1970.
+\newblock   (29 May 1970).
+\newblock
+\newblock
+\shownote{legislation.gov.uk, Retrieved May 5, 2021 from:
+  \url{https://www.legislation.gov.uk/ukpga/1970/41/enacted}.}
+
+
+\bibitem{bbc_mothers_suffering}
+{{BBC}}. 2018.
+\newblock Mothers suffering 'pay penalty' at work, report suggests.
+\newblock   (5 February 2018).
+\newblock
+\newblock
+\shownote{BBC News, Retrieved May 5, 2021 from:
+  \url{https://www.bbc.co.uk/news/business-42939584}.}
+
+
+\bibitem{1}
+{Robin Bleiweis}. 2020.
+\newblock Quick Facts About the Gender Wage Gap.
+\newblock   (2020).
+\newblock
+\newblock
+\shownote{\url{https://www.americanprogress.org/issues/women/reports/2020/03/24/482141/quick-facts-gender-wage-gap}.}
+
+
 \bibitem{uk_gender_gap}
 {Sam Bradley}. 2021.
 \newblock Here’s how UK agencies are improving their gender pay gaps.
@@ -53,6 +82,26 @@
 \url{http://dx.doi.org/10.1145/2939672.2939785}}
 
 
+\bibitem{ifs_mothers_suffer}
+{Monica~Costa Dias}, {Robert Joyce}, {and} {Francesca Parodi}. 2018.
+\newblock Mothers suffer big long-term pay penalty from part-time working.
+\newblock   (5 February 2018).
+\newblock
+\newblock
+\shownote{BBC News, Retrieved May 6, 2021 from:
+  \url{https://www.ifs.org.uk/publications/10364}.}
+
+
+\bibitem{equal_act_2010}
+{UK~Statutory Instruments}. 2010.
+\newblock The Equality Act 2010 (Equal Pay Audits).
+\newblock   (29 May 2010).
+\newblock
+\newblock
+\shownote{legislation.gov.uk, Retrieved May 5, 2021 from:
+  \url{https://www.legislation.gov.uk/uksi/2014/2559/contents/made}.}
+
+
 \bibitem{bbc_gender_pay_gap}
 {Lora Jones}. 2018.
 \newblock What is the gender pay gap?
@@ -68,6 +117,17 @@
 \newblock \showarticletitle{Data structures for statistical computing in
   python}. In {\em Proceedings of the 9th Python in Science Conference}, Vol.
   445. Austin, TX, 51--56.
+\newblock
+
+
+\bibitem{3}
+{Eirini Ntoutsi}, {Pavlos Fafalios}, {Ujwal Gadiraju}, {Vasileios Iosifidis},
+  {Wolfgang Nejdl}, {Maria-Esther Vidal}, {Salvatore Ruggieri}, {Franco
+  Turini}, {Symeon Papadopoulos}, {Emmanouil Krasanakis}, {and} {others}. 2020.
+\newblock \showarticletitle{Bias in data-driven artificial intelligence
+  systems—An introductory survey}.
+\newblock {\em Wiley Interdisciplinary Reviews: Data Mining and Knowledge
+  Discovery\/} {10}, 3 (2020), e1356.
 \newblock
 
 
@@ -90,7 +150,15 @@
 \newblock
 \newblock
 \shownote{BBC News, Retrieved May 5, 2021 from:
-  \url{https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/gender-pay-differences}.}
+  \url{https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2017provisionaland2016revisedresults/gender-pay-differences}.}
+
+
+\bibitem{tuc_motherhood}
+{{Trade Union Congress}}. 2016.
+\newblock The Motherhood Pay Penalty - Key Findings from TUC/IPPR Research
+  March 2016.
+\newblock   (29 March 2016).
+\newblock
 
 
 \bibitem{python}
@@ -108,6 +176,16 @@
 \newblock
 \showDOI{%
 \url{http://dx.doi.org/10.21105/joss.03021}}
+
+
+\bibitem{gender_pay_FT}
+{Aleksandra Wisniewska}, {Billy Ehrenberg-Shannon}, {and} {Sarah Gordon}. 2020.
+\newblock Gender pay gap: how women are short-changed in the UK.
+\newblock   (25 September 2020).
+\newblock
+\newblock
+\shownote{Financial Times, Retrieved May 5, 2021 from:
+  \url{https://www.legislation.gov.uk/uksi/2014/2559/contents/made}.}
 
 
 \end{thebibliography}

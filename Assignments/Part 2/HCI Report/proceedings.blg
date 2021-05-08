@@ -5,51 +5,49 @@ The style file: SIGCHI-Reference-Format.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: sample.bib
-Warning--I didn't find a database entry for "1"
-Warning--I didn't find a database entry for "3"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--require articleno with numpages field in xgboost
 Warning--empty publisher in pandas
 Warning--empty address in pandas
-You've used 12 entries,
+You've used 16 entries,
             5283 wiz_defined-function locations,
-            1299 strings with 16649 characters,
-and the built_in function-call counts, 7902 in all, are:
-= -- 886
-> -- 257
+            1314 strings with 17536 characters,
+and the built_in function-call counts, 10898 in all, are:
+= -- 1245
+> -- 411
 < -- 1
-+ -- 71
-- -- 99
-* -- 479
-:= -- 957
-add.period$ -- 69
-call.type$ -- 12
-change.case$ -- 67
-chr.to.int$ -- 12
-cite$ -- 15
-duplicate$ -- 713
-empty$ -- 524
-format.name$ -- 111
-if$ -- 1786
++ -- 121
+- -- 153
+* -- 705
+:= -- 1334
+add.period$ -- 91
+call.type$ -- 16
+change.case$ -- 98
+chr.to.int$ -- 16
+cite$ -- 19
+duplicate$ -- 935
+empty$ -- 687
+format.name$ -- 171
+if$ -- 2479
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 138
-num.names$ -- 72
-pop$ -- 270
+missing$ -- 20
+newline$ -- 170
+num.names$ -- 96
+pop$ -- 361
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 162
 quote$ -- 0
-skip$ -- 188
+skip$ -- 252
 stack$ -- 0
-substring$ -- 598
-swap$ -- 48
+substring$ -- 779
+swap$ -- 67
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
+type$ -- 140
 warning$ -- 3
-while$ -- 73
+while$ -- 92
 width$ -- 0
-write$ -- 215
-(There were 5 warnings)
+write$ -- 271
+(There were 3 warnings)
