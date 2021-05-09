@@ -9,45 +9,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--require articleno with numpages field in xgboost
 Warning--empty publisher in pandas
 Warning--empty address in pandas
-You've used 16 entries,
+You've used 17 entries,
             5283 wiz_defined-function locations,
-            1314 strings with 17536 characters,
-and the built_in function-call counts, 10898 in all, are:
-= -- 1245
-> -- 411
+            1318 strings with 17778 characters,
+and the built_in function-call counts, 11416 in all, are:
+= -- 1299
+> -- 426
 < -- 1
-+ -- 121
-- -- 153
-* -- 705
-:= -- 1334
-add.period$ -- 91
-call.type$ -- 16
-change.case$ -- 98
-chr.to.int$ -- 16
-cite$ -- 19
-duplicate$ -- 935
-empty$ -- 687
-format.name$ -- 171
-if$ -- 2479
++ -- 124
+- -- 159
+* -- 735
+:= -- 1402
+add.period$ -- 97
+call.type$ -- 17
+change.case$ -- 103
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 983
+empty$ -- 724
+format.name$ -- 177
+if$ -- 2590
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 20
-newline$ -- 170
-num.names$ -- 96
-pop$ -- 361
+newline$ -- 179
+num.names$ -- 102
+pop$ -- 378
 preamble$ -- 1
-purify$ -- 162
+purify$ -- 171
 quote$ -- 0
-skip$ -- 252
+skip$ -- 264
 stack$ -- 0
-substring$ -- 779
-swap$ -- 67
+substring$ -- 820
+swap$ -- 69
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
+type$ -- 149
 warning$ -- 3
-while$ -- 92
+while$ -- 98
 width$ -- 0
-write$ -- 271
+write$ -- 286
 (There were 3 warnings)

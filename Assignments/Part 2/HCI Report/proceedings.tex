@@ -189,6 +189,21 @@ We aim to remove the potential gender bias in a suggested pay to an employee fro
 	
 	In 2020, "More than three out of four UK companies pay their male staff more than their female staff, and in nine out of 17 sectors in the economy, men earn 10 per cent or more on average than women" \cite{gender_pay_FT}. This is an issue generated when workers get paid, on a scale, based on their "experience". It opens up an opportunity for employees to be paid different amounts based on what is perceived to be their worth, which can have an unconscious bias at the heart of it. % [As when people need to negotiate for their salaries men will think they are worth more than they actually are, while women will usually take the first offer]. 
 	
+	As we have already mentioned, bias exists whether it be conscious or unconsciously within everyday life. However, these biases that we humans have will only make those biases even more prominent when used to train ML models. This bias could be visibly evident or could go without a trace, but the models will only learn from past data to predict the future, and if that passed data is biased, the future will be significantly biased.
+	
+	There are several ways that a model can become biased. These include: sampling bias, measurement bias, exclusion bias, experimenter or observer bias, prejudicial bias, conformational bias, and Bandwagoning or bandwagon effect \cite{6_ways_bias}. 
+	
+	We need to make sure that bias does not become ingrained within our ML models. When it does, it can harm our daily lives. The bias can get manifested in exclusion, such as certain groups getting denied loans or technology not working the same for everyone. As AI becomes more a part of our lives, the dangers from bias only grow larger \cite{6_ways_bias}.
+	
+	There are multiple ways to reduce bias (see fig: \ref{fig:bias_advice}). The first thing that is required is to understand what the bias is \cite{3}. In order to understand the bias, this stage has three sub-sections within it, Socio-technical causes of bias, bias manifestation in data, fairness definition \cite{3}. Another way is by aiming to mitigate the bias \cite{3}. This stage involves preprocessing, in-processing and post-processing the data and model \cite{3}. The final method is accounting for bias \cite{3}. This method involves there being a bias-aware data collection, describing and modelling bias and finally explaining ai decisions \cite{3}. 
+	
+	\begin{figure}[h]
+		\includegraphics[width=9.2cm]{bias_advice.png}
+		\caption{Overview of the areas of bias to consider \cite{3}.}
+		\label{fig:bias_advice}
+		\centering
+	\end{figure}
+	
 	
 
 \subsection{Study Design}
