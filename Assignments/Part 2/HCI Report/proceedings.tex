@@ -168,9 +168,13 @@ We aim to remove the potential gender bias in a suggested pay to an employee fro
 
 [Project Spec]\\ % Maybe not needed.
 %blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+	Therefore, we will create a model that will predict a recommended employees wage based on their years of experience, not taking into account their gender or if they had previously worked part-time or not. We will find out the difference in the two genders wages to neutralise these differences so that the model will be almost identical for both men and women. Doing this should also take away any potential unconscious bias that the employer might have regarding what amount of pay to give to the employee.
+	
+	This model will get achieved by using mitigating bias methods in pre and post-processing. By finding out where the bias is, we can then change decision boundaries to present a fairer outcome based on only years of experience.
 
 [Result findings]\\
 %blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+	Overall the model was able to predict both men and women on an almost identical linear prediction. Only very slight differences were between the different genders and their linear plotted regression lines. These differences could get removed entirely with additional minor tweaks to the model parameters. Overall, the result was very positive.
 
 [Overview]\\
 	We will next look into the background of this topic and review existing literature. We will then explain the study design, the libraries used to create to solution and the dataset used, and the pre and post data processing techniques used. We will then present the results and analyse them. Finally, we will be discussing the over empirical study and concluding the overall findings.
@@ -195,11 +199,11 @@ We aim to remove the potential gender bias in a suggested pay to an employee fro
 	
 	We need to make sure that bias does not become ingrained within our ML models. When it does, it can harm our daily lives. The bias can get manifested in exclusion, such as certain groups getting denied loans or technology not working the same for everyone. As AI becomes more a part of our lives, the dangers from bias only grow larger \cite{6_ways_bias}.
 	
-	There are multiple ways to reduce bias (see fig: \ref{fig:bias_advice}). The first thing that is required is to understand what the bias is \cite{3}. In order to understand the bias, this stage has three sub-sections within it, Socio-technical causes of bias, bias manifestation in data, fairness definition \cite{3}. Another way is by aiming to mitigate the bias \cite{3}. This stage involves preprocessing, in-processing and post-processing the data and model \cite{3}. The final method is accounting for bias \cite{3}. This method involves there being a bias-aware data collection, describing and modelling bias and finally explaining ai decisions \cite{3}. 
+	There are multiple ways to reduce bias (see fig: \ref{fig:bias_advice}). The first thing that is required is to understand what the bias is \cite{three}. In order to understand the bias, this stage has three sub-sections within it, Socio-technical causes of bias, bias manifestation in data, fairness definition \cite{three}. Another way is by aiming to mitigate the bias \cite{three}. This stage involves preprocessing, in-processing and post-processing the data and model \cite{three}. The final method is accounting for bias \cite{three}. This method involves there being a bias-aware data collection, describing and modelling bias and finally explaining ai decisions \cite{three}. 
 	
 	\begin{figure}[h]
 		\includegraphics[width=9.2cm]{bias_advice.png}
-		\caption{Overview of the areas of bias to consider \cite{3}.}
+		\caption{Overview of the areas of bias to consider \cite{three}.} %\cite{three}
 		\label{fig:bias_advice}
 		\centering
 	\end{figure}
